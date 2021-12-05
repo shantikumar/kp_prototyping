@@ -273,8 +273,8 @@ address>span {opacity: 0.6;}
 footer .list-unstyled,
 footer .list-inline {margin-top: 20px;}
 
-footer .list-unstyled li {margin-bottom: 8px;}
-
+footer .list-unstyled>li {margin-bottom: 8px;}
+footer .list-inline>li {margin-bottom: 16px;}
 footer .list-inline a,
 footer .list-inline a {
     width: 160px;
