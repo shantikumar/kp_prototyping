@@ -270,58 +270,13 @@ address>span {font-size: 14px;}
 
 address>span {opacity: 0.6;}
 
-footer .list-unstyled {margin-top: 20px;}
+footer .list-unstyled,
+footer .list-inline {margin-top: 20px;}
 
 footer .list-unstyled li {margin-bottom: 8px;}
 
-a.gPlay,
-a.appStore {
-    border: 1px solid #c6bcb8; 
-    border-radius: 10px; 
-    height: 52px; 
-    display: flex; 
-    align-items: center; 
-    padding: 0 16px ; 
-    color: #FFFFFF; 
-    font-weight: normal; 
-    text-align: left; 
-    line-height: normal; 
-    font-size: 14px;
-    outline: none;
+footer .list-inline a,
+footer .list-inline a {
+    width: 160px;
+    height: 50px;
 }
-a.appStore:hover,
-a.appStore:active,
-a.appStore.active.focus, 
-a.appStore.active:focus, 
-a.appStore.active:hover, 
-a.appStore:active.focus, 
-a.appStore:active:focus, 
-a.appStore:active:hover,
-a.gPlay:hover,
-a.gPlay:active,
-a.gPlay.active.focus, 
-a.gPlay.active:focus, 
-a.gPlay.active:hover, 
-a.gPlay:active.focus, 
-a.gPlay:active:focus, 
-a.gPlay:active:hover {
-    text-decoration: none;
-    background-color: rgba(255,255,255,.15);
-    color: #FFFFFF;
-    outline: none;
-}
-
-
-.gPlay .text span,
-.appStore .text span {
-    font-size: 10px;
-}
-.gPlay .text h4,
-.appStore .text h4 {
-    margin: 0;
-}
-.gplay [class^="icon-"] img,
-.appStore [class^="icon-"] img {
-    width: 100%;
-}
-
