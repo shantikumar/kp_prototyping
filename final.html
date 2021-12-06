@@ -126,7 +126,12 @@
                         </form>
                         
                     </section>
-                    <span class="v-oGraphic a-position visible-md visible-lg">&nbsp;</span>
+                    <div class="v-oGraphic a-position visible-md visible-lg">
+                        <button type="button" class="r-position" data-toggle="modal" data-target="#myModal">
+                            <span class="icon-play a-position">&nbsp;</span>
+                        </button>
+                    </div>
+                    
                     <span class="v-diamond a-position visible-md visible-lg">&nbsp;</span>
                 </div>
             </div>
@@ -173,6 +178,19 @@
                 </div>
             </div>
         </footer>
+
+
+        <!-- Video Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <iframe width="860" height="315" src="https://www.youtube.com/embed/W86-mjWXQaw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>

@@ -331,7 +331,7 @@ label {
     font-size: 14px;
     color: rgba(0, 0, 0, .87);
     border: 1px solid #E0E0E0;
-    background-color: rgb(255 255 255 / 74%);
+    background-color: rgb(0 0 0 / 9%);
     border-radius: 14px;
     margin: 0 10px 10px 0;
 }
@@ -435,7 +435,21 @@ label {
     top: -17px;
     right: -11px;
 }
-
+.v-oGraphic button {
+    background: transparent;
+    border: transparent;
+}
+.v-oGraphic .icon-play {
+    background: url(../images/play_circle.svg) no-repeat center center;
+    width: 64px;
+    height: 64px;
+}
+.v-oGraphic span.icon-play {
+    position: absolute;
+    left: 130px;
+    top: 242px;
+}
+.modal .close {}
 
 /* Footer */
 footer,
@@ -492,6 +506,9 @@ footer .list-inline a {
     .form-inline.f-step .form-control {font-size: 24px}
     .f-outline .form-inline.multiple {flex-direction: column;width: 100%;}
     .btn {margin-bottom: 20px;width: 100% !important;}
+    
+    /* footer */
+    footer .list-inline {display: flex;flex-direction: row;}
     footer .list-inline>li{margin-bottom: 0 !important;width: 164px;padding: 0;}
     footer .list-inline>li>a {margin-bottom: 0;padding: 0;}
 }
