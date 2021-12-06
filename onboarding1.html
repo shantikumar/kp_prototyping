@@ -6,38 +6,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
         <title>Onboarding to Societal Platform SPace</title>
-
-
         
         <link rel="icon" href="https://space.societalplatform.org/auth/resources/d3nnr/login/space-keycloak-theme-v3/img/favicon.png" />  
-       
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap"/>
-
         <link rel="stylesheet" href="https://space.societalplatform.org/auth/resources/d3nnr/login/space-keycloak-theme-v3/node_modules/patternfly/dist/css/patternfly.min.css"/>
-        <!-- <link rel="stylesheet" href="https://space.societalplatform.org/auth/resources/d3nnr/login/space-keycloak-theme-v3/node_modules/patternfly/dist/css/patternfly-additions.min.css"/> -->
-        <!-- <link rel="stylesheet" href="https://space.societalplatform.org/auth/resources/d3nnr/login/space-keycloak-theme-v3/lib/zocial/zocial.css"/> -->
-        <!-- <link rel="stylesheet" href="https://space.societalplatform.org/auth/resources/d3nnr/login/space-keycloak-theme-v3/css/login.css"/> -->
 
         <link rel="stylesheet" href="css/prototype.css"/>
 
-        <script>
-            function showDropdown() {
-               document.getElementById("myDropdown").classList.toggle("show");
-            }
-
-            window.onclick = function(event) {
-               if (!event.target.matches('.dropbtn')) {
-               var dropdowns = document.getElementsByClassName("dropdown-content");
-               var i;
-                  for (i = 0; i < dropdowns.length; i++) {
-                     var openDropdown = dropdowns[i];
-                     if (openDropdown.classList.contains('show')) {
-                     openDropdown.classList.remove('show');
-                  }
-               }
-            }
-            }
-         </script>
     </head>
     <body>
         
@@ -48,26 +23,23 @@
                     <a href="https://space.societalplatform.org/" class="brand">
                         <img src="https://space.societalplatform.org/auth/resources/d3nnr/login/space-keycloak-theme-v3/img/spacelogonew.png" alt="SPace (Societal Platform Assets Collaboration Environment)" />
                     </a>
-                    <ul class="nav-lists">
+                    <ul class="nav-lists hidden-xs">
                         <li><a href ="https://space.societalplatform.org/public/about">About Us</a></li>
                         <li><a href="https://space.societalplatform.org/public/collaborators">Collaborators</a></li>
                     </ul>
+                    <div class="dropdown visible-xs">
+                        <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img src ="https://space.societalplatform.org/auth/resources/d3nnr/login/space-keycloak-theme-v3/img/Vector.png" alt="menu icon">
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dLabel">
+                            <li><a href ="https://space.societalplatform.org/public/about">About Us</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="https://space.societalplatform.org/public/collaborators">Collaborators</a></li>
+                        </ul>
+                    </div>
                 </div>
             </nav>
         </header>
-        <!-- <div id="kc-header" class="login-pf-page-header">
-            <div id="kc-header-wrapper" class=" header-align">
-                <div class="pd-title-responsive">
-                    <div class="dropbtn icons btn-right showLeft" onclick="showDropdown()">
-                        <img src ="https://space.societalplatform.org/auth/resources/d3nnr/login/space-keycloak-theme-v3/img/Vector.png" alt="menu icon">
-                    </div>
-                    <div id="myDropdown" class="dropdown-content">
-                        <a href="https://space.societalplatform.org/public/about">About Us</a>
-                        <a href="https://space.societalplatform.org/public/collaborators">Collaborators</a>
-                    </div>
-                </div>
-            </div>
-        </div> -->
 
         <!--New design starts-->
         <main class="container">
@@ -105,7 +77,7 @@
                                 <input class="btn btn-primary btn-lg disabled" name="next" id="nextTC" type="submit" value="Next">
                             </div>
                         </form>
-                        <span class="v-diamond a-position">&nbsp;</span>
+                        <span class="v-diamond a-position visible-md visible-lg">&nbsp;</span>
                     </section>
                 </div>
             </div>
@@ -152,6 +124,11 @@
                 </div>
             </div>
         </footer>
+
+
+        <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+
 
     </body>
 </html>
