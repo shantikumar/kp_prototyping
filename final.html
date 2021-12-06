@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="Cache-Control" content="no-cache">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+        <title>Onboarding to Societal Platform SPace</title>
+
+
+        
+        <link rel="icon" href="https://space.societalplatform.org/auth/resources/d3nnr/login/space-keycloak-theme-v3/img/favicon.png" />  
+       
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap"/>
+
+        <link rel="stylesheet" href="https://space.societalplatform.org/auth/resources/d3nnr/login/space-keycloak-theme-v3/node_modules/patternfly/dist/css/patternfly.min.css"/>
+        <!-- <link rel="stylesheet" href="https://space.societalplatform.org/auth/resources/d3nnr/login/space-keycloak-theme-v3/node_modules/patternfly/dist/css/patternfly-additions.min.css"/> -->
+        <!-- <link rel="stylesheet" href="https://space.societalplatform.org/auth/resources/d3nnr/login/space-keycloak-theme-v3/lib/zocial/zocial.css"/> -->
+        <!-- <link rel="stylesheet" href="https://space.societalplatform.org/auth/resources/d3nnr/login/space-keycloak-theme-v3/css/login.css"/> -->
+
+        <link rel="stylesheet" href="css/prototype.css"/>
+
+        <script>
+            function showDropdown() {
+               document.getElementById("myDropdown").classList.toggle("show");
+            }
+
+            window.onclick = function(event) {
+               if (!event.target.matches('.dropbtn')) {
+               var dropdowns = document.getElementsByClassName("dropdown-content");
+               var i;
+                  for (i = 0; i < dropdowns.length; i++) {
+                     var openDropdown = dropdowns[i];
+                     if (openDropdown.classList.contains('show')) {
+                     openDropdown.classList.remove('show');
+                  }
+               }
+            }
+            }
+         </script>
+         
+    </head>
+    <body>
+        
+        <!-- header-->
+        <header>
+            <nav class="container">
+                <div class="box-row">
+                    <a href="https://space.societalplatform.org/" class="brand">
+                        <img src="https://space.societalplatform.org/auth/resources/d3nnr/login/space-keycloak-theme-v3/img/spacelogonew.png" alt="SPace (Societal Platform Assets Collaboration Environment)" />
+                    </a>
+                    <ul class="nav-lists">
+                        <li><a href ="https://space.societalplatform.org/public/about">About Us</a></li>
+                        <li><a href="https://space.societalplatform.org/public/collaborators">Collaborators</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- <div id="kc-header" class="login-pf-page-header">
+            <div id="kc-header-wrapper" class=" header-align">
+                <div class="pd-title-responsive">
+                    <div class="dropbtn icons btn-right showLeft" onclick="showDropdown()">
+                        <img src ="https://space.societalplatform.org/auth/resources/d3nnr/login/space-keycloak-theme-v3/img/Vector.png" alt="menu icon">
+                    </div>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="https://space.societalplatform.org/public/about">About Us</a>
+                        <a href="https://space.societalplatform.org/public/collaborators">Collaborators</a>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+        <!--Main starts-->
+        <main class="container">
+            <div class="mainBody">
+                <div class="row form-container f-outline m-tb r-position">
+                    <section class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+                        <p class="s-text">You are almost done! Please help us and the community to know you better.</p>
+                        <form>
+                            <div class="form-inline f-step">
+                                <div class="form-group r-position">
+                                    <div class="circle">
+                                        <img class="profile-pic" src="images/v-avatar.svg">
+                                    </div>
+                                    <div class="p-image">
+                                    <i class="v-camera upload-button a-position"></i>
+                                        <input class="file-upload" type="file" accept="image/*"/>
+                                    </div>
+                                </div>
+                                <div class="form-group form-btext">
+                                    <input tabindex="1" id="org" class="form-control" name="org" value="Mangalam Gupta" type="text" autocomplete="off" autofocus>
+                                </div>
+                            </div>
+                            <div class="form-inline multiple m-tb">
+                                <div class="form-group">
+                                    <label for="org" class="control-label">Organisation <span class="text-warning">*</span></label>   
+                                    <input tabindex="1" id="org" class="form-control" name="org" value="" type="text" autocomplete="off" autofocus>
+                                </div>
+                                <div class="form-group">
+                                    <label for="ctry" class="control-label">Country <span class="text-warning">*</span></label>
+                                    <select class="form-control" id="ctry">
+                                        <option>&nbsp;</option>
+                                        <option>Afghanistan</option>
+                                        <option>Albania</option>
+                                        <option>Algeria</option>
+                                        <option>Andorra</option>
+                                      </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="role" class="control-label">Current Role <span class="text-warning">*</span></label>
+                                    <input id="role" class="form-control" name="role" type="text" autocomplete="off">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="domain" class="control-label">
+                                    Domain / Area of work <span class="text-warning">*</span>
+                                    <span class="help-block m-0 xs-text">(use comma to add upto 5 entries)</span>
+                                </label>
+                                
+                                <input id="domain" class="form-control" name="domain" value="" type="text" autocomplete="off">
+                                <div class="well mt-10 b-none b-shadow-none">
+                                    <div class="chips">domain1 <span class="icon-close"></span></div>
+                                    <div class="chips">domain2 <span class="icon-close"></span></div>
+                                    <div class="chips">domain3 <span class="icon-close"></span></div>
+                                    <div class="chips">longer domain4 <span class="icon-close"></span></div>
+                                    <div class="chips">text is long for this domain5 <span class="icon-close"></span></div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="area" class="control-label">
+                                    Areas of expertise
+                                    <span class="help-block m-0 xs-text">(use comma to add upto 5 entries)</span>
+                                </label>
+                                <input id="area" class="form-control" name="area" type="text" autocomplete="off">
+                                <div class="well mt-10 b-none b-shadow-none">
+                                    <div class="chips">Communication <span class="icon-close"></span></div>
+                                    <div class="chips">Customer service <span class="icon-close"></span></div>
+                                    <div class="chips">Leadership <span class="icon-close"></span></div>
+                                    <div class="chips">Management skills <span class="icon-close"></span></div>
+                                    <div class="chips">Interpersonal communication <span class="icon-close"></span></div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="profile" class="control-label">
+                                    Profile Link
+                                    <span class="help-block m-0 xs-text">(Ex. LinkedIn, Organization Profile, etc.,)</span>
+                                </label>   
+                                <input id="profile" class="form-control" name="profile" placeholder="https://www.linkedIn.com/" type="text" autocomplete="off">
+                            </div>
+                            
+                            <div class="form-group center">
+                                <input class="btn btn-primary btn-lg disabled" name="next" id="nextTC" type="submit" value="Finish">
+                                <input class="btn btn-primary" name="next" id="nextTC" type="submit" value="Back">
+                            </div>
+                        </form>
+                        
+                    </section>
+                    <span class="v-oGraphic a-position visible-md visible-lg">&nbsp;</span>
+                        <span class="v-diamond a-position visible-md visible-lg">&nbsp;</span>
+                </div>
+            </div>
+        </main>
+        
+        <!--Main ends-->
+
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                        <address>
+                            <h5>Ekstep Foundation</h5>
+                            <span>Quorum, No. 85, 7th Cross, 4th Block<br>
+                            Koramangala, Bangalore - 560034<br>
+                            Karnataka, India</span><br><br>
+                            <a href="mailto:space@societalplatform.org" class="yellow-color">space@societalplatform.org</a>
+                        </address>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                        <ul class="list-unstyled">
+                            <li><a href="#">Data Privacy</a></li>
+                            <li><a href="#">Terms &amp; Conditions</a></li>
+                            <li><a href="#">Content Policy &amp; Community Guidelines</a></li>
+                            <li><a href="#">License Policy</a></li>
+                            <li><a href="#">Asset Guidelines</a></li>
+                          </ul>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                        <ul class="list-inline">
+                            <li>
+                                <a class="btn btn-link appStore" href="" role="button">
+                                    <img src="images/appStore.svg">
+                                </a>
+                            </li>
+                            <li>
+                                <a class="btn btn-link gPlay" role="button">
+                                    <img src="images/playStore.svg">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+        <script>
+            $(document).ready(function() {
+               var readURL = function(input) {
+                   if (input.files && input.files[0]) {
+                       var reader = new FileReader();
+
+                       reader.onload = function (e) {
+                           $('.profile-pic').attr('src', e.target.result);
+                       }
+               
+                       reader.readAsDataURL(input.files[0]);
+                   }
+               }
+               
+
+               $(".file-upload").on('change', function(){
+                   readURL(this);
+               });
+               
+               $(".upload-button").on('click', function() {
+               $(".file-upload").click();
+               });
+           });
+        </script>
+    </body>
+</html>
