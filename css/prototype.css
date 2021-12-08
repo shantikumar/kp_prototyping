@@ -523,6 +523,7 @@ footer .list-inline a {
         color: #FFFFFF;
     }
 
+    .mainBody.s-pad{padding: 0 16px;}
 
     /* final step onboarding */
     .form-inline.f-step {text-align: center;}
